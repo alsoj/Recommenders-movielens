@@ -18,7 +18,7 @@ from split_utils import (
 
 def python_random_split(data, ratio=0.75, seed=42):
     """Pandas random splitter
-    The splitter randomly splits the input data.
+    input data를 랜덤하게 나누는 함수
 
     Args:
         data (pd.DataFrame): Pandas DataFrame to be split.
@@ -30,7 +30,7 @@ def python_random_split(data, ratio=0.75, seed=42):
         seed (int): Seed.
         
     Returns:
-        list: Splits of the input data as pd.DataFrame.
+        list: 나누어진 input data (pd.DataFrame)
     """
     multi_split, ratio = process_split_ratio(ratio)
 
