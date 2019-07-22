@@ -26,7 +26,8 @@ def user_item_pairs(
     user_item_filter_df=None,
     shuffle=True,
 ):
-    """Get all pairs of users and items data.
+    """
+    user와 item 데이터의 모든 pair를 반환하는 함수
 
     Args:
         user_df (pd.DataFrame): User data containing unique user ids and maybe their features.
