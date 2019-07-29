@@ -3,5 +3,5 @@
 
 사용 알고리즘 : 협업 필터링(Collaborative Filtering), Softmax, Wide & Deep
 
-recommender_CF&Softmax.ipynb : 협업 필터링(Collaborative Filtering), Softmax
+recommender_CF&Softmax.ipynb : 협업 필터링(Collaborative Filtering), Softmax \n
 recommender_wide&deep.ipynb : Wide & Deep
