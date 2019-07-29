@@ -1,13 +1,10 @@
-# Recommenders-movielens
-## movielens dataset을 활용한 추천 시스템 구현
+# 이 REPOSITORY는
+    Movie-Lens Dataset을 활용해 추천시스템을 구현한 프로젝트입니다.
+    사용 알고리즘 : 협업 필터링(Collaborative Filtering), Softmax, Wide & Deep
+    recommender_CF&Softmax.ipynb : 협업 필터링(Collaborative Filtering), Softmax
+    recommender_wide&deep.ipynb : Wide & Deep
 
-사용 알고리즘 : 협업 필터링(Collaborative Filtering), Softmax, Wide & Deep
-
-recommender_CF&Softmax.ipynb : 협업 필터링(Collaborative Filtering), Softmax
-recommender_wide&deep.ipynb : Wide & Deep
-
-recommender_wide&deep.ipynb 중
-
+## About Wide & Deep Model
 모델 생성 function
 def build_model(
     model_dir=MODEL_DIR,
