@@ -6,7 +6,7 @@ recommender_wide&deep.ipynb : Wide & Deep
 
 ## About Wide & Deep Model
 ###Wide & Deep Model을 이해하기 위한 참고 자료  
-[구글 Wide & Deep 논문] https://arxiv.org/abs/1606.07792{: target="_blank" }  
+[구글 Wide & Deep 논문] (https://arxiv.org/abs/1606.07792){: target="_blank" }  
 [PR12 논문 리뷰] https://youtu.be/hKoJPqWLrI4{: target="_blank" }  
 [논문 한글 설명] https://yamalab.tistory.com/101{: target="_blank" }  
 [Wide & Deep 튜토리얼] https://tensorflowkorea.gitbooks.io/tensorflow-kr/content/g3doc/tutorials/wide_and_deep/{: target="_blank" }  
