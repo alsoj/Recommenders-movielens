@@ -15,7 +15,7 @@ def build_feature_columns(
     items,
     user_col=DEFAULT_USER_COL,
     item_col=DEFAULT_ITEM_COL,
-    item_feat_col=None,
+        item_feat_col=None,
     user_dim=8,
     item_dim=8,
     item_feat_shape=None,
