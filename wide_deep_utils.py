@@ -15,7 +15,7 @@ def build_feature_columns(
     items,
     user_col=DEFAULT_USER_COL,
     item_col=DEFAULT_ITEM_COL,
-        item_feat_col=None,
+    item_feat_col=None,
     user_dim=8,
     item_dim=8,
     item_feat_shape=None,
@@ -23,6 +23,7 @@ def build_feature_columns(
 ):
     """
     Tensorflow high-level API wide & deep feature 컬럼 빌드
+    Build wide and/or deep feature columns for TensorFlow high-level API Estimator.
 
     Args:
         users (iterable): 중복 제거된 user ids.
@@ -80,7 +81,7 @@ def _build_deep_columns(user_ids, item_ids, user_dim, item_dim,
         item_ids (tf.feature_column.categorical_column_with_vocabulary_list): Item ids.
         user_dim (int): User embedding dimension.
         item_dim (int): Item embedding dimension.
-        item_feat_col (list): Item feature column name.
+        item_feat_col (str): Item feature column name.
         item_feat_shape (int or an iterable of integers): Item feature array shape.
     Returns:
         list of tf.feature_column: Deep feature columns.
@@ -99,30 +100,15 @@ def _build_deep_columns(user_ids, item_ids, user_dim, item_dim,
             max_norm=item_dim ** .5
         )
     ]
-
-    # TO-DO 에러 해결!!!
-    print("item_feat_col :::::::: ", item_feat_col)
-
     # Item feature
     if item_feat_col is not None:
-        if isinstance(item_feat_col, list):
-            for feat_nm in item_feat_col:
-                print("feat_nm :::::::: ", feat_nm)
-                deep_columns.append(
-                    tf.feature_column.numeric_column(
-                        feat_nm,
-                        shape=item_feat_shape,
-                        dtype=tf.float32
-                    )
-                )
-        else:
-            deep_columns.append(
-                tf.feature_column.numeric_column(
-                    item_feat_col,
-                    shape=item_feat_shape,
-                    dtype=tf.float32
-                )
+        deep_columns.append(
+            tf.feature_column.numeric_column(
+                item_feat_col,
+                shape=item_feat_shape,
+                dtype=tf.float32
             )
+        )
     return deep_columns
 
 
