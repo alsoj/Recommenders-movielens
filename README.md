@@ -2,7 +2,7 @@
 Movie-Lens Dataset을 활용해 추천시스템을 구현한 프로젝트입니다.  
 사용 알고리즘 : 협업 필터링(Collaborative Filtering), Softmax, Wide & Deep  
 recommender_CF&Softmax.ipynb : 협업 필터링(Collaborative Filtering), Softmax  
-recommender_wide&deep.ipynb : Wide & Deep (Microsoft 공개 버전) 
+recommender_wide&deep.ipynb : Wide & Deep (Microsoft 공개 버전)  
 recommender_wide&deep_v2.ipynb : Wide & Deep (TF 튜토리얼 버전)
 
 ## About Wide & Deep Model
